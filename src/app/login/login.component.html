@@ -1,0 +1,22 @@
+
+  <div class="login-container">
+    <h1 class="display-3"><b>Welcome to Chicken Dinner Shopping Site</b></h1>
+    <form (submit)="login()">
+        <div class="half-left">
+          <div class="form-group">
+            <label class="col-form-label col-form-label-lg" style="font-size:24px" for="inputLarge">Account</label>
+            <input class="form-control form-control-lg" style="font-size:24px" [(ngModel)]="account" name="account" type="text" placeholder="Please Enter Account" id="account">
+          </div>
+        </div>
+        <div class="half-right">
+          <div class="form-group">
+            <label class="col-form-label col-form-label-lg" style="font-size:24px" for="inputLarge">Password</label>
+            <input class="form-control form-control-lg" style="font-size:24px" [(ngModel)]="password" name="password" type="password" placeholder="Please Enter Password" id="password">
+          </div>
+        </div>
+        <br>
+        <div class="float-center">
+          <button type="submit" class="btn btn-primary" style="width:200px;font-size:36px;">Log in</button>
+        </div>
+      </form>
+  </div>

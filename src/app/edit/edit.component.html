@@ -1,0 +1,24 @@
+
+<table class="table table-hover"style="font-size:24px">
+  <thead>
+    <tr>
+      <!-- <th scope="col">Type</th> -->
+      <th scope="col">Name</th>
+      <th scope="col">Quantity</th>
+      <th scope="col">Price</th>
+      <th scope="col">Operation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of showCart" class="table-primary">
+      <!-- <th scope="row">Primary</th> -->
+      <td>{{item.name}}</td>
+      <td>{{item.quantity}}</td>
+      <td>${{item.price}}</td>
+      <td>
+        <button type="button" (click)="removeOne(item.name)" class="btn btn-warning">Remove One</button>
+        <button type="button" (click)="removeAll(item.name)" class="btn btn-danger">Remove All</button>
+      </td>
+    </tr>
+  </tbody>
+  </table>
